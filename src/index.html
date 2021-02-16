@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--定义文档视口,防止网页缩放-->
+    <meta name="keywords" content="">
+    <!--网页的关键字信息-->
+    <meta name="description" content="">
+    <!--网页的简介-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--使用IE最新内核-->
+    <title>小欧的简历</title>
+    <style id="demo2">
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #div1 {
+            border: 1px solid red;
+            position: fixed;
+            top: 10px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        #demo {
+            word-break: break-all;
+            /* CSS文字自动换行 */
+        }
+
+        #div1::before {
+            position: absolute;
+            content: '';
+            display: block;
+        }
+
+        #div1::after {
+            position: absolute;
+            content: '';
+            display: block;
+        }
+
+        @media(max-width:500px) {
+            #demo {
+                height: 50vh;
+                overflow: auto;
+            }
+            #Wrapper{
+                height: 50vh;
+            }
+            #div1 {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="Wrapper">
+        <div id="div1"></div>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
